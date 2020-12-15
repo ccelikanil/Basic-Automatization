@@ -1,3 +1,3 @@
 # Basic-Automatization
 
-faster your recon
+rev up your recon
