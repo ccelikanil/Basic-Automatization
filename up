@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# automatize spawning an http server w/python
+
+port=$1 # arg 
+
+if [ -z "$1" ] # check if port is NULL 
+then
+	command python -m SimpleHTTPServer 80
+else
+	command python -m SimpleHTTPServer $port
+fi
+
+# use case 1:
+# up (runs on port 80)
+
+# use case 2:
+# up <port> (runs on specified port)
