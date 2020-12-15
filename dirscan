@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# automatization gobuster scan with simple command
+
+host=$1
+option=$2
+
+
+if [ -z "$2" ] # check if default option would be used or not
+then
+	command gobuster dir -w /usr/share/dirb/wordlists/common.txt -u $host -t 50 -x php,txt,html 2>/dev/null
+else
+	command gobuster dir -w $option -u $host -t 50 -x php,txt,html 2>/dev/null
+fi
+
+# ln -s /filepath/scan /usr/local/bin  <- make binary global in system
+
+# use case 1:
+# dirscan <host>
+
+# use case 2:
+# dirscan <host> <path_to_wordlist>
