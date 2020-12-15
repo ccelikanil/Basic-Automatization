@@ -1,0 +1,20 @@
+# automatization nmap scan with simple command
+
+#!/bin/bash
+
+host=$1
+param=$2
+ports=$3
+
+command nmap -Pn -vv -A $host $param $ports
+
+# ln -s /filepath/scan /usr/local/bin  <- make binary global in system
+
+# use case 1:
+# scan <host>
+
+# use case 2:
+# scan <host> -p-
+
+#use case 3:
+# scan <host> -p <port_range>
