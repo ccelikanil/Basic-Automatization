@@ -11,6 +11,8 @@ else
 	command python -m SimpleHTTPServer $port
 fi
 
+# ln -s /filepath/up /usr/local/bin  <- make binary global in system
+
 # use case 1:
 # up (runs on port 80)
 
