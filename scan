@@ -1,6 +1,6 @@
-# automatization nmap scan with simple command
-
 #!/bin/bash
+
+# automatization nmap scan with simple command
 
 host=$1
 param=$2
